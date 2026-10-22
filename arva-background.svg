@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" preserveAspectRatio="xMidYMid slice">
+  <title>ARVA background</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#0d1828"/>
+      <stop offset="1" stop-color="#1d3557"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.05" r="0.6">
+      <stop offset="0" stop-color="#e0a526" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e0a526" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0a526" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e0a526" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#bg)"/>
+  <rect width="800" height="1200" fill="url(#glow)"/>
+
+  <!-- Everything below stays in the bottom part, so the logo area (top & middle) is clean -->
+
+  <!-- Soft contour waves -->
+  <g fill="none" stroke="#8fb3e0" stroke-width="1.5">
+    <path stroke-opacity="0.20" d="M-50 760 Q 150 710 330 750 T 700 730 T 900 700"/>
+    <path stroke-opacity="0.16" d="M-50 805 Q 160 760 340 795 T 710 780 T 900 755"/>
+    <path stroke-opacity="0.12" d="M-50 850 Q 170 810 350 840 T 720 830 T 900 810"/>
+    <path stroke-opacity="0.08" d="M-50 895 Q 180 860 360 885 T 730 880 T 900 865"/>
+  </g>
+
+  <!-- Faint bar chart -->
+  <g fill="#8fb3e0" fill-opacity="0.10">
+    <rect x="60"  y="1060" width="40" height="140"/>
+    <rect x="120" y="1020" width="40" height="180"/>
+    <rect x="180" y="1080" width="40" height="120"/>
+    <rect x="240" y="990"  width="40" height="210"/>
+    <rect x="300" y="1040" width="40" height="160"/>
+    <rect x="360" y="960"  width="40" height="240"/>
+    <rect x="420" y="1000" width="40" height="200"/>
+    <rect x="480" y="930"  width="40" height="270"/>
+    <rect x="540" y="970"  width="40" height="230"/>
+    <rect x="600" y="900"  width="40" height="300"/>
+    <rect x="660" y="940"  width="40" height="260"/>
+    <rect x="720" y="870"  width="40" height="330"/>
+  </g>
+
+  <!-- Risk trend line with filled area -->
+  <path fill="url(#area)"
+    d="M40 1080 L140 1040 L230 1060 L330 980 L430 1000 L530 920 L630 940 L740 840 L740 1200 L40 1200 Z"/>
+  <polyline fill="none" stroke="#e0a526" stroke-opacity="0.8" stroke-width="3" stroke-linejoin="round"
+    points="40,1080 140,1040 230,1060 330,980 430,1000 530,920 630,940 740,840"/>
+  <g fill="#e0a526">
+    <circle cx="140" cy="1040" r="5" fill-opacity="0.8"/>
+    <circle cx="330" cy="980"  r="5" fill-opacity="0.8"/>
+    <circle cx="530" cy="920"  r="5" fill-opacity="0.8"/>
+    <circle cx="740" cy="840"  r="8"/>
+  </g>
+</svg>

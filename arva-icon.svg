@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <title>ARVA logo</title>
+  <!-- Shield outline -->
+  <path d="M50 8 L88 22 V58 C88 84 70 102 50 112 C30 102 12 84 12 58 V22 Z"
+        fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Bars inside shield (growing risk / analysis) -->
+  <g fill="#ffffff">
+    <rect x="29" y="68" width="10" height="22"/>
+    <rect x="45" y="55" width="10" height="35"/>
+    <rect x="61" y="42" width="10" height="48" fill="#e0a526"/>
+  </g>
+</svg>

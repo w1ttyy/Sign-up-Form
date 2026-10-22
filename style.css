@@ -127,3 +127,35 @@ body {
     flex: 1;
     padding-top: 30px;
 }
+
+.signup-action button {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #1d3557;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 48px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.signup-action button:hover {
+    background-color: #2a4a75;
+}
+
+.login-prompt {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-prompt a {
+    color: #1d3557;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}

@@ -50,8 +50,8 @@ body {
 
 /* spoločné pravidlá – najprv */
 .info,
-.form-div,
-.submit {
+.form-section,
+.signup-action {
     padding: 0 40px;
 }
 
@@ -75,14 +75,14 @@ body {
     margin-top: 20px;
 }
 
-.form-div {
+.form-section {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-.form-div form {
+.form-section form {
     max-width: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,12 +90,40 @@ body {
     row-gap: 16px;
 }
 
-.form-div form h2 {
+.form-section form h2 {
     grid-column: 1 / -1;
     font-size: 24px;
     font-weight: 600;
 }
 
-.submit {
+.form-section form div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-section label {
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #374151;
+}
+
+.form-section input {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 6px 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+}
+
+.form-section input:focus {
+    outline: none;
+    border-color: #1d3557;
+}
+
+.signup-action {
     flex: 1;
+    padding-top: 30px;
 }
